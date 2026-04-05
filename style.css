@@ -1,496 +1,403 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-/* navbar */
-.navbar {
+header .navbar-nav li {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
 
+.day-night-mode {
+    margin-left: 30px;
+    background-color: #aab4be;
+    height: 18px;
+    width: 45px;
+    border-radius: 20px;
+}
+
+.day-night-mode i {
+    position: relative;
+    top: -5px;
     display: flex;
-    margin-top: 30px;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: #001e3c;
+    color: rgba(255, 255, 255, 0.822);
+    border-radius: 20px;
+}
+
+.color-change {
+    color: #4d3bdb;
+}
+
+/* hero section */
+
+.upper-sy-gap {
+    margin-top: 100px;
+}
+
+.hero-section h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-size: 700;
+}
+
+/* profile card section */
+
+.profile-card {
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #fff;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.profile-card-content {
+    padding: 20px 0px;
+
+}
+
+/*  team section */
+
+.team-section {
+    margin-top: 100px;
+}
+
+.main-heading {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.main-heading .highlight {
+    color: #4d3bdb;
+}
+
+/* Team Card Container */
+.team-card {
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#navlogo img {
-    width: 190px;
-    margin-left: -150px;
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.navli ul {
+.profile-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #e5e0fb;
+    border-radius: 50%;
     display: flex;
-    margin-left: 140px;
-}
-
-.navli li {
-    list-style-type: none;
-    flex-direction: column;
-    margin-left: 22px;
-
-}
-
-
-/* Main Part Pic */
-
-.Talent {
-    margin-top: 80px;
-    margin-bottom: 100px;
-    font-size: 55px;
-    font-weight: bold;
+    align-items: center;
     justify-content: center;
-    display: flex;
+}
+
+.profile-placeholder .initials {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4d3bdb;
+    opacity: 0.5;
+}
+
+.member-name {
+    font-weight: 700;
+    font-size: 1.1rem;
     color: black;
-    flex-direction: column;
-    
 }
 
-#talentone {
-    margin-top: -20px;
-    font-size: 55px;
-    font-weight: bold;
-
-}
-
-#talenttwo {
-    margin-top: -81px;
-    color: #6851ff;
-    font-size: 55px;
-    font-weight: bold;
-
+.member-role {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6c756d;
+    ;
 }
 
 
-.mainimg img {
-    height: auto;
-    width: 60%;
-    display: block;
-    margin-top: -100px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-     /* big Card One */
-
-     .mainbigdiv {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 140px;
-     }
-     .card {
-        max-width: 1152px;
-        height: 412px;
-        background: #ffffff;
-        border-radius: 15px;
-        padding: 30px;
-        display: flex;
-        gap: 30px;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.5);
-    }
-
-    .card img {
-        width: 180px;
-        height: 250px;
-        margin-top: 40px;
-        border-radius: 12px;
-        object-fit: cover;
-    }
-
-    .content h2 {
-        margin: 0;
-        font-size: 26px;
-        color: #333;
-    }
-
-    .content span {
-        color: #6c63ff;
-        font-weight: bold;
-    }
-
-    .content p {
-        color: #555;
-        line-height: 1.6;
-        margin-top: 12px;
-        font-size: 14px;
-    }
-
-    .heart {
-        color: red;
-        font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-        .card {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .card img {
-            margin: auto;
-        }
-    }
-
-
-           /* big card two  */
-
-           #cardtwoo {
-            height: 450px;
-           }
-
-        /* Meet Section */
-
-        body {
-            background-color: #e9e7f2;
-          }
-          
-          .team {
-            padding: 80px 20px;
-          }
-          
-          .containers {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            max-width: 1000px;
-            margin: auto;
-          }
-          
-          .cardss {
-            text-align: center;
-            margin: 20px;
-          }
-          
-          .cardss img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-          }
-          
-          .cardss h3 {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
-          }
-          
-          .cardss p {
-            color: #6c757d;
-            font-size: 14px;
-          }
+/* hiring mine gallery section  */
 
 
 
-/* Gallery */
-
-span {
-    color: #6851ff;
-    padding-left: 20px;
-}
-
-h1 {
-    font-family: sans-serif;
+.hiring-mine-gallery h2 {
+    font-size: 3rem;
+    font-weight: 700;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    font-size: xxx-large;
-    font-weight: bold;
-    margin-bottom: 20px
+    gap:10px;   
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.gallery-of-pictures {
+    display: grid;
+    grid-template-rows: repeat(14, 50px);
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto 150px auto;
+}
+
+.pic-box {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.pic-box:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+
+.img-box1 {
+    grid-area: 4 / 1 / 8 / 5;
+    background-image: url("./Accets/hiringmine-img1.jpg");
+}
+
+.img-box2 {
+    grid-area: 3 / 5 / 6 / 8;
+    background-image: url("./Accets/hiringmine-img2.jpg");
+}
+
+.img-box3 {
+    grid-area: 2 / 8 / 5 / 12;
+    background-image: url("./Accets/hiringmine-img3.jpg");
+}
+
+.img-box4 {
+    grid-area: 8 / 1 / 11 / 5;
+    background-image: url("./Accets/hiringmine-img4.jpg");
+}
+
+.img-box5 {
+    grid-area: 6 / 5 / 11 / 10;
+    background-image: url("./Accets/hiringmine-img5.jpg");
+}
+
+.img-box6 {
+    grid-area: 5 / 10 / 7 / 13;
+    background-image: url("./Accets/hiringmine-img6.jpg");
+}
+
+.img-box7 {
+    grid-area: 11 / 3 / 15 / 7;
+    background-image: url("./Accets/hiringmine-img7.jpg");
+}
+
+.img-box8 {
+    grid-area: 7 / 10 / 12 / 13;
+    background-image: url("./Accets/hiringmine-img8.jpg");
+}
+
+.img-box9 {
+    grid-area: 11 / 7 / 15 / 10;
+    background-image: url("./Accets/hiringmine-img9.jpg");
+}
+
+/* footer */
+
+footer {
+    background: linear-gradient(180deg, #6851ff 0%, #9747ff 100%);
+    width: 100%;
+    color: white;
+    padding-top: 80px;
+}
+
+.footer-first-sec {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(14, 50px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-hirine-mine {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
-.images:hover {
-    transform: scale(1.1);
+.footer-logo img {
+    width: 180px;
 }
 
-#one {
-    background-repeat: no-repeat;
-    grid-area: 2 / 5 / 5 / 8;
-    background-size: cover;
-    border-radius: 12px 12px 12px 12px;
-    background-image: url(/Assets/Gallery/1.jpg);
-    transition: all 0.5s ease;
+.footer-first-sec p {
+    color: #f3f4f6;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
 }
 
-#two {
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    background-size: cover;
-    background-image: url(/Assets/Gallery/2.jpg);
-    grid-area: 1 / 8 / 5 / 12;
-    transition: all 0.5s ease;
-
+.footer-first-sec h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
-#three {
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    background-size: cover;
-    background-image: url(/Assets/Gallery/3.jpg);
-    grid-area: 4 / 1 / 7 / 5;
-    transition: all 0.5s ease;
-
-}
-
-#four {
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    background-size: cover;
-    background-image: url(/Assets/Gallery/4.jpg);
-    grid-area: 5 / 5 / 10 / 10;
-    transition: all 0.5s ease;
-
-}
-
-#five {
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    background-size: cover;
-    background-image: url(/Assets/Gallery/5.jpg);
-    grid-area: 5 / 10 / 7 / 14;
-    transition: all 0.5s ease;
-
-}
-
-#six {
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    background-size: cover;
-    background-image: url(/Assets/Gallery/6.jpg);
-    grid-area: 7 / 1 / 10 / 5;
-    transition: all 0.5s ease;
-
-}
-
-#seven {
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    background-size: cover;
-    background-image: url(/Assets/Gallery/7.jpg);
-    grid-area: 7 / 10 / 12 / 14;
-    transition: all 0.5s ease;
-
-}
-
-#eight {
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    background-size: cover;
-    background-image: url(/Assets/Gallery/8.jpg);
-    grid-area: 10 / 3 / 14 / 7;
-    transition: all 0.5s ease;
-
-}
-
-#nine {
-    background-repeat: no-repeat;
-    border-radius: 12px;
-    background-size: cover;
-    background-image: url(/Assets/Gallery/9.jpg);
-    grid-area: 10 / 7 / 14 / 10;
-    transition: all 0.5s ease;
-
-}
-
-
-/* Footer */
-
-.footerimages {
-    gap: 50px;
-    margin-top: 200px;
-    justify-content: center;
+.social-media-accounts {
     display: flex;
-    margin-bottom: 120px;
-
+    gap: 25px;
+    font-size: 22px;
 }
 
-.footerimages img {
-    height: 300px;
-    width: 480px;
-}
-
-.footerimages i {
-    padding-top: 140px;
-}
-
-div.next {
-    width: 100%;
-    height: 500px;
-}
-
-.footone h1 {
-    font-size: 48px;
-}
-
-.footone span {
-    color: #5a3fd0;
-}
-
-.foottwo h1 {
-    font-size: 48px;
-}
-
-.foottwo span {
-    color: #5a3fd0;
-}
-
-.footer {
-    height: 470px;
-    width: 100%;
-    background: linear-gradient(180deg, #7606ed 20%, #d448f0 99%);
-}
-
-.footertextarea {
-
+.contect-us {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 250px;
+}
+
+.footer-second-sec {
+    background: transparent;
+    padding: 20px 0;
+}
+
+.footer-second-sec .container {
+    border-bottom: none;
+}
+
+.privacy-term p,
+.copy-right p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.message-box {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: #6851ff;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
 }
 
-.footertextarea .right {
-    padding-top: 75px;
-    padding-bottom: 45px;
-    color: white;
-}
+/* responsize styling & media query */
 
-.footertextarea .left i {
-    color: white;
-}
 
-.footertextarea .left li {
-    list-style-type: none;
-    margin: 15px;
-    color: white;
-}
-
-.footericons ul {
-    font-size: 25px;
-    padding-top: 25px;
-    gap: 40px;
-    flex-direction: row;
-    display: flex;
-    list-style-type: none;
-}
-
-.footlast {
-    color: white;
-    padding-top: 12px;
-    text-align: center;
-    line-height: 25px;
-}
-
-.footlast a {
-    color: white;
-    text-decoration: none;
-
-}
-
-/* --- RESPONSIVE FIXES (No font or color changes) --- */
-
-@media (max-width: 1024px) {
-    .navli ul {
-        margin-left: 20px;
-        gap: 10px;
-    }
-    
-    #navlogo img {
-        margin-left: 0;
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.2rem; 
     }
 
-    .container {
-        margin-left: 20px;
-        margin-right: 20px;
+    .footer-first-sec {
+        flex-direction: column; 
+        gap: 40px;
+    }
+
+    .about-hirine-mine {
+        max-width: 100%; 
     }
 }
 
 @media (max-width: 768px) {
-    /* Navbar fix */
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
+    .upper-sy-gap {
+        margin-top: 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-card {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-card-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .gallery-of-pictures {
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto; 
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    .pic-box {
+        grid-area: auto !important; 
+        height: 180px; 
+    }
+
+    .hiring-mine-gallery h2 {
+        font-size: 1.8rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+        padding: 20px 0;
     }
     
-    .navli ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0;
-    }
-
-    /* Hero Section fix */
-    #talentone, #talenttwo {
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .mainimg img {
-        width: 95%;
-        margin-top: 20px;
-    }
-
-    /* Big Cards fix */
-    .card {
-        flex-direction: column;
-        height: auto !important; /* Fixed height hatane ke liye */
-        padding: 20px;
-        text-align: center;
-    }
-
-    .card img {
-        margin-top: 0;
-        width: 100%;
-        max-width: 200px;
-    }
-
-    /* Gallery Grid fix (Mobile par images ko stack karne ke liye) */
-    .container {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        margin: 20px;
-    }
-
-    .images {
-        width: 100%;
-        height: 250px;
-    }
-
-    /* Footer fix */
-    .footer {
-        height: auto;
-        padding-bottom: 30px;
-    }
-
-    .footertextarea {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .footericons ul {
-        justify-content: center;
+    .day-night-mode {
+        margin-left: 0;
+        margin-top: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    #talentone, #talenttwo {
-        font-size: 28px;
+    .gallery-of-pictures {
+        grid-template-columns: 1fr; /
     }
-    
-    .navli li {
-        margin-left: 10px;
-        font-size: 14px;
+
+    .main-heading {
+        font-size: 1.8rem;
+    }
+
+    .message-box {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
     }
 }
