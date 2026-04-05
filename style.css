@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* navbar */
+.navbar {
+
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#navlogo img {
+    width: 190px;
+    margin-left: -150px;
+}
+
+.navli ul {
+    display: flex;
+    margin-left: 140px;
+}
+
+.navli li {
+    list-style-type: none;
+    flex-direction: column;
+    margin-left: 22px;
+
+}
+
+
+/* Main Part Pic */
+
+.Talent {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-size: 55px;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    color: black;
+    flex-direction: column;
+    
+}
+
+#talentone {
+    margin-top: -20px;
+    font-size: 55px;
+    font-weight: bold;
+
+}
+
+#talenttwo {
+    margin-top: -81px;
+    color: #6851ff;
+    font-size: 55px;
+    font-weight: bold;
+
+}
+
+
+.mainimg img {
+    height: auto;
+    width: 60%;
+    display: block;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+     /* big Card One */
+
+     .mainbigdiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 140px;
+     }
+     .card {
+        max-width: 1152px;
+        height: 412px;
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 30px;
+        display: flex;
+        gap: 30px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+
+    .card img {
+        width: 180px;
+        height: 250px;
+        margin-top: 40px;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+
+    .content h2 {
+        margin: 0;
+        font-size: 26px;
+        color: #333;
+    }
+
+    .content span {
+        color: #6c63ff;
+        font-weight: bold;
+    }
+
+    .content p {
+        color: #555;
+        line-height: 1.6;
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    .heart {
+        color: red;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .card {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .card img {
+            margin: auto;
+        }
+    }
+
+
+           /* big card two  */
+
+           #cardtwoo {
+            height: 450px;
+           }
+
+        /* Meet Section */
+
+        body {
+            background-color: #e9e7f2;
+          }
+          
+          .team {
+            padding: 80px 20px;
+          }
+          
+          .containers {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+          }
+          
+          .cardss {
+            text-align: center;
+            margin: 20px;
+          }
+          
+          .cardss img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+          }
+          
+          .cardss h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+          
+          .cardss p {
+            color: #6c757d;
+            font-size: 14px;
+          }
+
+
+
+/* Gallery */
+
+span {
+    color: #6851ff;
+    padding-left: 20px;
+}
+
+h1 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: xxx-large;
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, 50px);
+    gap: 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+#one {
+    background-repeat: no-repeat;
+    grid-area: 2 / 5 / 5 / 8;
+    background-size: cover;
+    border-radius: 12px 12px 12px 12px;
+    background-image: url(/Assets/Gallery/1.jpg);
+    transition: all 0.5s ease;
+}
+
+#two {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url(/Assets/Gallery/2.jpg);
+    grid-area: 1 / 8 / 5 / 12;
+    transition: all 0.5s ease;
+
+}
+
+#three {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url(/Assets/Gallery/3.jpg);
+    grid-area: 4 / 1 / 7 / 5;
+    transition: all 0.5s ease;
+
+}
+
+#four {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url(/Assets/Gallery/4.jpg);
+    grid-area: 5 / 5 / 10 / 10;
+    transition: all 0.5s ease;
+
+}
+
+#five {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url(/Assets/Gallery/5.jpg);
+    grid-area: 5 / 10 / 7 / 14;
+    transition: all 0.5s ease;
+
+}
+
+#six {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url(/Assets/Gallery/6.jpg);
+    grid-area: 7 / 1 / 10 / 5;
+    transition: all 0.5s ease;
+
+}
+
+#seven {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url(/Assets/Gallery/7.jpg);
+    grid-area: 7 / 10 / 12 / 14;
+    transition: all 0.5s ease;
+
+}
+
+#eight {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url(/Assets/Gallery/8.jpg);
+    grid-area: 10 / 3 / 14 / 7;
+    transition: all 0.5s ease;
+
+}
+
+#nine {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    background-size: cover;
+    background-image: url(/Assets/Gallery/9.jpg);
+    grid-area: 10 / 7 / 14 / 10;
+    transition: all 0.5s ease;
+
+}
+
+
+/* Footer */
+
+.footerimages {
+    gap: 50px;
+    margin-top: 200px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 120px;
+
+}
+
+.footerimages img {
+    height: 300px;
+    width: 480px;
+}
+
+.footerimages i {
+    padding-top: 140px;
+}
+
+div.next {
+    width: 100%;
+    height: 500px;
+}
+
+.footone h1 {
+    font-size: 48px;
+}
+
+.footone span {
+    color: #5a3fd0;
+}
+
+.foottwo h1 {
+    font-size: 48px;
+}
+
+.foottwo span {
+    color: #5a3fd0;
+}
+
+.footer {
+    height: 470px;
+    width: 100%;
+    background: linear-gradient(180deg, #7606ed 20%, #d448f0 99%);
+}
+
+.footertextarea {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footertextarea .right {
+    padding-top: 75px;
+    padding-bottom: 45px;
+    color: white;
+}
+
+.footertextarea .left i {
+    color: white;
+}
+
+.footertextarea .left li {
+    list-style-type: none;
+    margin: 15px;
+    color: white;
+}
+
+.footericons ul {
+    font-size: 25px;
+    padding-top: 25px;
+    gap: 40px;
+    flex-direction: row;
+    display: flex;
+    list-style-type: none;
+}
+
+.footlast {
+    color: white;
+    padding-top: 12px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.footlast a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* --- RESPONSIVE FIXES (No font or color changes) --- */
+
+@media (max-width: 1024px) {
+    .navli ul {
+        margin-left: 20px;
+        gap: 10px;
+    }
+    
+    #navlogo img {
+        margin-left: 0;
+    }
+
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar fix */
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .navli ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    /* Hero Section fix */
+    #talentone, #talenttwo {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .mainimg img {
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    /* Big Cards fix */
+    .card {
+        flex-direction: column;
+        height: auto !important; /* Fixed height hatane ke liye */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card img {
+        margin-top: 0;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* Gallery Grid fix (Mobile par images ko stack karne ke liye) */
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px;
+    }
+
+    .images {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Footer fix */
+    .footer {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .footertextarea {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footericons ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #talentone, #talenttwo {
+        font-size: 28px;
+    }
+    
+    .navli li {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+}
